@@ -6,16 +6,71 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'DM Sans';
+    src: url('assets/fonts/dm-sans-v16-latin-300.woff2') format('woff2');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('assets/fonts/dm-sans-v16-latin-500.woff2') format('woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('assets/fonts/dm-sans-v16-latin-600.woff2') format('woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('assets/fonts/dm-sans-v16-latin-700.woff2') format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Bricolage Grotesque';
+    src: url('assets/fonts/bricolage-grotesque-v8-latin-700.woff2') format('woff2');
+    font-weight: 700;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    background-color: #F4F7FA;
+    color: #263445;
+}
+
+h1, h2, h3 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+}
+
 .container-header {
     display: flex;                  /*Organiza os elementos em uma linha*/
     justify-content: space-between; /*Distribui os elementos horizontalmente*/
     align-items: center;            /*Alinha os elementos verticalmente*/
     background-color: #173B65 ;
     width: 100%;
-    padding: 20px;
-   
-    
-    border: 2px solid red;
+    padding: 15px 30px;
+   background-color: #173B65;
+}
+
+.busca input {
+    width: 220px;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    outline: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+}
+
+.busca input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
 }
 
 .logo h1 {
@@ -31,9 +86,6 @@
     height: auto;
 }
 
-.busca {
-    border: 2px solid green;
-}
 
 .container-main{
     width: 100%;
@@ -44,19 +96,69 @@
 }
 
 .tempo-atual {
-    border: 2px solid blue;
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.tempo-atual h2 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 24px;
+    color: #173B65;
+}
+
+.tempo-atual h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #173B65;
+}
+
+.tempo-atual > p {
+    font-size: 16px;
+    color: #718096;
 }
 
 .container-previsao {
-    border: 2px solid red;
+    padding-top: 5px;
 }
 
 .previsao-semanal {
-    border: 2px solid green;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.previsao-semanal h2 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 20px;
+    color: #173B65;
+    margin-bottom: 20px;
 }
 
 .previsao-horaria {
-    border: 2px solid orange;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-top: 5px;
+}
+
+.previsao-horaria h2 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 20px;
+    color: #173B65;
+    margin-bottom: 8px;
+}
+
+.previsao-horaria h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #718096;
+    margin-bottom: 20px;
 }
 
 /* Ícone da previsão diária */
@@ -64,10 +166,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 
 .icone-clima img {
-    width: 50px;
+    width: 45px;
     height: auto;
 }
 
@@ -88,5 +191,38 @@
     align-items: center;
     justify-content: space-between;
     gap: 12px;
+    padding: 15px 0;
+    border-bottom: 1px solid #E5EAF0;
+}
+
+.temperatura {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    color: #718096;
+}
+
+.temp-max {
+    color: #E67E22;
+    font-weight: 700;
+}
+
+.temp-min {
+    color: #247BA0;
+    font-weight: 500;
+}
+
+.dia-semana {
+    font-weight: 600;
+    color: #263445;
+    min-width: 110px;
+}
+
+.hora-previsao{
+    background-color: #F4F7FA;
+    border-radius: 12px;
+    padding: 15px;
+    
 }
 
