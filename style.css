@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container-header {
+    display: flex;                  /*Organiza os elementos em uma linha*/
+    justify-content: space-between; /*Distribui os elementos horizontalmente*/
+    align-items: center;            /*Alinha os elementos verticalmente*/
+    background-color: #173B65 ;
+    width: 100%;
+    padding: 20px;
+   
+    
+    border: 2px solid red;
+}
+
+.logo h1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+.busca {
+    border: 2px solid green;
+}
+
+.container-main{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;    
+    padding: 20px;
+
+}
+
+.tempo-atual {
+    border: 2px solid blue;
+}
+
+.container-previsao {
+    border: 2px solid red;
+}
+
+.previsao-semanal {
+    border: 2px solid green;
+}
+
+.previsao-horaria {
+    border: 2px solid orange;
+}
+
+/* Ícone da previsão diária */
+.icone-clima {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone-clima img {
+    width: 50px;
+    height: auto;
+}
+
+/* Ícones da previsão por hora */
+.icone-hora-clima {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone-hora-clima img {
+    width: 35px;
+    height: auto;
+}
+
+.dia-previsao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
