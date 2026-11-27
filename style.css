@@ -96,6 +96,9 @@ h1, h2, h3 {
 }
 
 .tempo-atual {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #FFFFFF;
     padding: 25px;
     border-radius: 12px;
