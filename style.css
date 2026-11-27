@@ -284,4 +284,8 @@ h1, h2, h3 {
         min-width: 0;
     }
 
+     .icone-tempo-atual {
+        display: none;
+    }
+
 }
