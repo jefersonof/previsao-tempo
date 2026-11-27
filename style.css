@@ -248,6 +248,14 @@ h1, h2, h3 {
    
 }
 
+.rodape{
+    background-color: #173B65;    
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    line-height: 20px;
+}
+
 @media (max-width: 600px) {
 
     .container-header {
